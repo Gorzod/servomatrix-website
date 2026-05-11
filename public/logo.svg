@@ -1,0 +1,46 @@
+<svg viewBox="0 0 940 207" width="940" height="207" role="img" aria-label="Servomatrix" xmlns="http://www.w3.org/2000/svg">
+  <title>Servomatrix</title>
+  <desc>Servomatrix — Intelligent Buildings. Absolute Control.</desc>
+  <defs>
+    <link xmlns="http://www.w3.org/1999/xhtml" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&amp;family=DM+Mono:wght@400&amp;display=swap"/>
+  </defs>
+
+  <!-- ── 3×3 Matrix Mark — diagonal opacity gradient (TL→BR) ── -->
+  <!-- Row 1 -->
+  <rect x="34"  y="35"  width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="1.00" />
+  <rect x="83"  y="35"  width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="0.55" />
+  <rect x="132" y="35"  width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="0.20" />
+  <!-- Row 2 -->
+  <rect x="34"  y="84"  width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="0.55" />
+  <rect x="83"  y="84"  width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="1.00" />
+  <rect x="132" y="84"  width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="0.55" />
+  <!-- Row 3 -->
+  <rect x="34"  y="133" width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="0.20" />
+  <rect x="83"  y="133" width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="0.55" />
+  <rect x="132" y="133" width="40" height="40" rx="7" fill="#00d4b4" fill-opacity="1.00" />
+
+  <!-- ── Vertical separator ── -->
+  <line x1="191" y1="20" x2="191" y2="187" stroke="#ffffff" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- ── Wordmark ── -->
+  <text
+    x="212" y="114"
+    font-family="Rajdhani, 'Trebuchet MS', sans-serif"
+    font-weight="700"
+    font-size="95px"
+    dominant-baseline="central"
+    letter-spacing="1">
+    <tspan fill="#e8edf2">SERVO</tspan><tspan fill="#00d4b4">MATRIX</tspan>
+  </text>
+
+  <!-- ── Horizontal rule ── -->
+  <line x1="212" y1="159" x2="905" y2="159" stroke="#ffffff" stroke-opacity="0.10" stroke-width="1"/>
+
+  <!-- ── Tagline ── -->
+  <text
+    x="214" y="185"
+    font-family="'DM Mono', 'Courier New', monospace"
+    font-size="15.5px"
+    letter-spacing="4.2"
+    fill="#5a7080">INTELLIGENT BUILDINGS. ABSOLUTE CONTROL.</text>
+</svg>
