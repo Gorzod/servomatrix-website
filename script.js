@@ -136,17 +136,33 @@
       return;
     }
 
-    // Simulate submission (no backend)
+    // Submit to Web3Forms
     const submitBtn = form.querySelector('button[type="submit"]');
-    submitBtn.disabled  = true;
+    submitBtn.disabled    = true;
     submitBtn.textContent = 'Sending…';
 
-    setTimeout(() => {
-      showNotice('success', 'Thank you — your enquiry has been received. We will respond within one business day.');
-      form.reset();
-      submitBtn.disabled    = false;
-      submitBtn.textContent = 'Send Enquiry';
-    }, 1200);
+    const data = new FormData(form);
+
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: data
+    })
+      .then(res => res.json())
+      .then(json => {
+        if (json.success) {
+          showNotice('success', 'Thank you — your enquiry has been received. We will respond within one business day.');
+          form.reset();
+        } else {
+          showNotice('error', json.message || 'Something went wrong. Please try again or email us directly.');
+        }
+      })
+      .catch(() => {
+        showNotice('error', 'Network error — please check your connection and try again.');
+      })
+      .finally(() => {
+        submitBtn.disabled    = false;
+        submitBtn.textContent = 'Send Enquiry';
+      });
   });
 
   function isValidEmail(email) {

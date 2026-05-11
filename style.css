@@ -185,6 +185,11 @@ ul { list-style: none; }
   align-items: center;
   gap: 10px;
 }
+.nav-logo-svg {
+  height: 36px;
+  width: auto;
+  display: block;
+}
 .logo-mark {
   width: 34px;
   height: 34px;

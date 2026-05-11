@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,8 +21,7 @@
   <header class="nav-wrapper" id="navbar">
     <nav class="nav-inner">
       <a href="#home" class="nav-logo">
-        <span class="logo-mark">SM</span>
-        <span class="logo-text">SERVOMATRIX</span>
+        <img src="logo.svg" alt="Servomatrix" class="nav-logo-svg" />
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -452,6 +452,7 @@
         </div>
         <div class="contact-right">
           <form class="contact-form" id="contactForm" novalidate>
+            <input type="hidden" name="access_key" value="d794af6d-2621-4d79-b4e1-eb5897df58f6" />
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name *</label>
@@ -506,8 +507,7 @@
       <div class="footer-inner">
         <div class="footer-brand">
           <a href="#home" class="nav-logo">
-            <span class="logo-mark">SM</span>
-            <span class="logo-text">SERVOMATRIX</span>
+            <img src="logo.svg" alt="Servomatrix" class="nav-logo-svg" />
           </a>
           <p>Building automation and controls engineering for the built environment.</p>
         </div>
